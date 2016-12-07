@@ -9,14 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.vsaik.snapchat.NoDataActivity"
-    tools:showIn="@layout/activity_no_data">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Login to proceed"
-        android:id="@+id/nodata"/>
+    tools:context="com.example.vsaik.snapchat.FriendActivity"
+    tools:showIn="@layout/activity_friend">
 
 </RelativeLayout>

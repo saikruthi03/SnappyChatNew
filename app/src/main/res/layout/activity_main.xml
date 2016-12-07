@@ -18,12 +18,12 @@
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" >
-       <ImageButton
-           android:layout_width="50dp"
-           android:layout_height="50dp"
-           android:layout_marginLeft="320dp"
-           android:background="@drawable/signout"
-           android:id="@+id/signout"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="320dp"
+                android:background="@drawable/signout"
+                android:id="@+id/signout"/>
 
         </android.support.v7.widget.Toolbar>
 
@@ -42,7 +42,6 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context="com.example.vsaik.snapchat.LoginActivity"
         tools:showIn="@layout/activity_login"
-        android:background="@drawable/background"
         android:id="@+id/timeLine">
 
 
@@ -52,9 +51,8 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Profile Information"
             android:id="@+id/textView"
-            android:layout_below="@+id/mySwitch"
-            android:layout_toEndOf="@+id/radioPrivacy"
-            android:layout_above="@+id/nickname" />
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -169,8 +167,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:id="@+id/linearLayout"></LinearLayout>
+            android:orientation="horizontal"></LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
@@ -242,9 +239,10 @@
             android:id="@+id/mySwitch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recieve Notifications"
-            android:layout_below="@+id/linearLayout"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:text="Recieve Notifications" />
 
         <ImageView
             android:layout_width="150dp"
